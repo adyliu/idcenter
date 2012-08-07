@@ -1,0 +1,16 @@
+.classpath
+.project
+.settings
+*.tmp
+target
+*.log
+*.tgz
+/data
+/build
+/docs
+/doc
+__pycache__
+*.pyc
+*.swp
+/.idea
+*.iml

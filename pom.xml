@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>sohu-parent</artifactId>
+        <groupId>com.sohu</groupId>
+        <version>1</version>
+    </parent>
+    <groupId>com.sohu.idcenter</groupId>
+    <artifactId>idcenter</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <name>idcenter</name>
+    <description>https://github.com/adyliu/idcenter</description>
+    <developers>
+        <developer>
+            <id>imxylz</id>
+            <name>Ady Liu</name>
+            <email>imxylz@gmail.com</email>
+            <url>https://github.com/adyliu</url>
+            <roles>
+                <role>developer</role>
+            </roles>
+        </developer>
+    </developers>
+    <scm>
+        <connection>scm:git:git@github.com:adyliu/idcenter.git</connection>
+        <developerConnection>scm:git:git@github.com:adyliu/idcenter.git</developerConnection>
+        <url>https://github.com/adyliu/idcenter</url>
+    </scm>
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.10</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>
