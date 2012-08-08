@@ -6,7 +6,7 @@
         <groupId>com.sohu</groupId>
         <version>1</version>
     </parent>
-    <groupId>com.sohu.idcenter</groupId>
+    <groupId>com.sohu</groupId>
     <artifactId>idcenter</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>idcenter</name>
