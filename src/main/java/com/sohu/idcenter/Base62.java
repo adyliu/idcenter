@@ -18,6 +18,7 @@
 package com.sohu.idcenter;
 
 /**
+ * A Base62 method
  * @author adyliu (imxylz@gmail.com)
  * @since 1.0
  */

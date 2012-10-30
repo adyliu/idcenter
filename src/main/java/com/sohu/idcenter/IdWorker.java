@@ -27,7 +27,7 @@ public class IdWorker {
 
     private final long workerId;
     private final long datacenterId;
-    private final long idepoch = 1344322705519L;
+    private final long idepoch;
     
     private final long workerIdBits = 5L;
     private final long datacenterIdBits = 5L;
@@ -43,11 +43,15 @@ public class IdWorker {
     private long lastTimestamp = -1L;
     private long sequence;
 
-    //
     public IdWorker(long workerId, long datacenterId, long sequence) {
+        this(workerId, datacenterId, sequence, 1344322705519L);
+    }
+    //
+    public IdWorker(long workerId, long datacenterId, long sequence,long idepoch) {
         this.workerId = workerId;
         this.datacenterId = datacenterId;
         this.sequence = sequence;
+        this.idepoch = idepoch;
         if (workerId < 0 || workerId > maxWorkerId) {
             throw new IllegalArgumentException("workerId is illegal: " + workerId);
         }
