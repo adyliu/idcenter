@@ -6,7 +6,7 @@
         <version>1</version>
     </parent>
     <artifactId>idcenter</artifactId>
-    <version>1.1-SNAPSHOT</version>
+    <version>1.1</version>
     <name>idcenter</name>
     <description>https://github.com/adyliu/idcenter</description>
     <developers>
