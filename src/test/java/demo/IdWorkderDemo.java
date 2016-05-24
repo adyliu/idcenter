@@ -2,6 +2,9 @@ package demo;
 
 import com.sohu.idcenter.IdWorker;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 
 /**
  * @author adyliu (imxylz@gmail.com)
@@ -19,5 +22,9 @@ public class IdWorkderDemo {
         }
         System.out.println(iw);
         System.out.println(iw2);
+        long nextId = iw.getId();
+        System.out.println(nextId);
+        long time = iw.getIdTimestamp(nextId);
+        System.out.println(time+" -> "+new SimpleDateFormat("yyyyMMddHHmmss").format(new Date(time)));
     }
 }

@@ -114,6 +114,15 @@ public class IdWorker {
         return id;
     }
 
+    /**
+     * get the timestamp (millis second) of id
+     * @param id the nextId
+     * @return the timestamp of id
+     */
+    public long getIdTimestamp(long id){
+        return idepoch + (id >> timestampLeftShift);
+    }
+
     private long tilNextMillis(long lastTimestamp) {
         long timestamp = timeGen();
         while (timestamp <= lastTimestamp) {
